@@ -1,7 +1,6 @@
 package application;
 
-import java.sql.Date;
-import java.text.SimpleDateFormat;
+import java.util.List;
 
 import model.dao.DaoFactory;
 import model.dao.SellerDao;
@@ -17,6 +16,13 @@ public class Application {
 		System.out.println("== Teste 1: FindByID ===");
 		Seller seller = sellerDao.findById(3);
 		System.out.println(seller);
+		
+		System.out.println("\n== Teste 1: FindByID ===");
+		Department department = new Department(2, null);
+		List<Seller> list = sellerDao.findByDepartment(department);
+		for (Seller obj : list) {
+			System.out.println(obj);
+		}
 	}
 
 }
