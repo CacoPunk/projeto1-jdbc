@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+C:\Users\pedro.bonatto\Documents\ESTUDO\JDBC\daojdbc\.metadata\.plugins\org.eclipse.jdt.core
