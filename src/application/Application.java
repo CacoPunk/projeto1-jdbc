@@ -23,20 +23,22 @@ public class Application {
 		List<Seller> list = sellerDao.findByDepartment(department);
 		for (Seller obj : list) {
 			System.out.println(obj);
-			
 		}
 		
 		System.out.println("\n== Teste 3: FindByID ===");
 		list = sellerDao.findAll();
 		for (Seller obj : list) {
-			System.out.println(obj);
-		
-			
+			System.out.println(obj);	
 		}
 		
 		Seller newSeller = new Seller(null, "greg", "greg@gmail.com", new Date(), 400.5, department);
 		sellerDao.insert(newSeller);
 		System.out.println(newSeller.getId());
+		
+		
+		seller = sellerDao.findById(1);
+		seller.setName("LUCAS");
+		sellerDao.update(seller);
 	}
 
 }
