@@ -39,6 +39,8 @@ public class Application {
 		seller = sellerDao.findById(1);
 		seller.setName("LUCAS");
 		sellerDao.update(seller);
+		
+		sellerDao.deleteById(55);
 	}
 
 }
