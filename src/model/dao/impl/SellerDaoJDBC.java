@@ -61,7 +61,7 @@ public class SellerDaoJDBC implements SellerDao {
 			DB.closeStatement(st);
 		}
 	}
-
+//UPDATE
 	@Override
 	public void update(Seller obj) {
 		PreparedStatement st = null;

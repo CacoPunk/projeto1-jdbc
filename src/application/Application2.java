@@ -11,8 +11,10 @@ public class Application2 {
 		
 		DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
 		Department department = new Department();
-		department.setName("TESTE");
-		departmentDao.insert(department);
+		department  =  departmentDao.findById(1);
+		System.out.println(department);
+		///department.setName("TESTE");
+		//departmentDao.insert(department);
 		
 		
 	}
